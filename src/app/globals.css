@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --primary-blue: #0A64F8;
+  --bg-color: #F8FAFC;
+  --surface-color: #FFFFFF;
+  --text-dark: #1E293B;
+  --text-light: #64748B;
+  
+  --brand-blue: #0A64F8; /* Assuming this close to standard Tailwind Blue-600 */
+  --purple-grad-start: #783AF0; /* Upcoming journey gradient start */
+  --purple-grad-end: #3D237A; /* Upcoming journey gradient end */
+  
+  --ticket-gradient-start: #3F3F5A;
+  --ticket-gradient-end: #0A0A10;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --padding-mobile: 1rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-dark);
+}
+
+/* Mobile-first constraints */
+.mobile-container {
+  max-width: 480px; 
+  margin: 0 auto; /* Center on large screens */
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--surface-color);
+  box-shadow: 0 0 20px rgba(0,0,0,0.05); /* Slight shadow to distinguish from backgound on desktop */
+}
+
+/* Utility to hide standard scrollbar in some containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
