@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import BottomNav from "@/components/layout/BottomNav";
+import InstallPrompt from "@/components/common/InstallPrompt";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-slate-100`}>
         <div className="mobile-container pb-[80px]"> {/* Added padding for fixed nav */}
+          <InstallPrompt />
           {children}
           <BottomNav />
         </div>

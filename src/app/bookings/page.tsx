@@ -21,7 +21,7 @@ export default function Bookings() {
              <Share2 size={20} />
           </button>
         </div>
-        <p className="text-sm text-green-300 font-medium mt-6 text-center">Thank You Mohit, Happy Journey !</p>
+        <p className="text-sm text-green-300 font-medium mt-6 text-center">Thank You Nitin Arya, Happy Journey !</p>
       </div>
 
       <div className="px-4 -mt-3">

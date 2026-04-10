@@ -1,0 +1,15 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="100" fill="#0A64F8" />
+  <g transform="translate(100, 150) scale(1.1)">
+      <!-- Train curve -->
+      <path d="M 50 100 Q 150 50 200 60 Q 250 80 250 150" stroke="white" stroke-width="14" stroke-linecap="round" fill="none"/>
+      <!-- Bottom line -->
+      <path d="M 60 140 L 180 140 Q 220 140 230 160" stroke="white" stroke-width="14" stroke-linecap="round" fill="none"/>
+      <!-- Side window slant -->
+      <path d="M 170 85 L 210 135" stroke="white" stroke-width="14" stroke-linecap="round" fill="none" />
+      <!-- Speed line 1 -->
+      <path d="M 40 85 L 120 75" stroke="white" stroke-width="10" stroke-linecap="round" fill="none" />
+      <!-- Speed line 2 -->
+      <path d="M 50 115 L 140 105" stroke="white" stroke-width="10" stroke-linecap="round" fill="none" />
+  </g>
+</svg>
