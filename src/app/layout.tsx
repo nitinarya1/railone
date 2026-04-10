@@ -8,6 +8,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "RailOne - Premium Train Booking",
   description: "Next-generation train booking experience",
+  manifest: '/manifest.webmanifest',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'RailOne',
+  },
+};
+
+export const viewport = {
+  themeColor: '#0A64F8',
 };
 
 export default function RootLayout({
